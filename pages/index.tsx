@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   const router = useRouter();
 
   const [translation, setTranslation] = useState({
-    language: (router.query.language as string) || "yoda",
+    language: (router.query.language as string) || "australian",
     userInput: "",
     translationValue: "",
   });
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     setTranslation((prev) => ({
       ...prev,
-      language: (router.query.language as string) || "yoda",
+      language: (router.query.language as string) || "australian",
     }));
   }, [router]);
 
